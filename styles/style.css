@@ -293,7 +293,7 @@ width: auto;
   order: 1;
 }
 .logo__place-footer {
-  position: relative ;
+  position: relative;
   top: 0px;
   background-image: url(../images/logo_place_footer.svg);
 }
