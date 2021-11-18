@@ -1,8 +1,3 @@
-a {
-  color: #2f80ed;
-  text-decoration: none;
-}
-a:hover {text-decoration: underline;}
 
 .page {
   min-width: 1100px;
@@ -15,6 +10,11 @@ a:hover {text-decoration: underline;}
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+.link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+.link:hover {text-decoration: underline;}
 /* ------------ Начало Header ------------ */
 
 .header {
@@ -28,30 +28,33 @@ a:hover {text-decoration: underline;}
   align-items: center;
   padding-left: 64px;
 }
-
-.header__logo-place {
+.logo {
   width: 183px;
   height: 32px;
-  background-image: url(../images/logo_place_header.svg);
   position: absolute;
   top: 30px;
 }
+.logo__place-header {
+  background-image: url(../images/logo_place_header.svg);
+}
 
 .header__title {
-  width: 730px;
+  max-width: 730px;
   font-size: 96px;
   font-weight: bolder;
   line-height: 102px;
   position: absolute;
+  z-index: 2;
 }
 
 .header__subtitle {
-  width: 388px;
+  max-width: 388px;
   font-size: 18px;
   font-weight: normal;
   line-height: 25px;
   position: absolute;
   bottom: 30px;
+  z-index: 2;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -66,57 +69,54 @@ a:hover {text-decoration: underline;}
 }
 
 .header__main-illustration {
-  width: 765px;
-  height: 608px;
-  background-image: url(../images/header-image.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom right;
   position: absolute;
   right: 0px;
   bottom: 0px;
   z-index: 1;
 }
 
-/* ------------ Начало Content ---------- */
-.content {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.header__main-illustration-place {
+  width: 765px;
+  height: 608px;
 }
 
-/* ------------ Начало Description ---------- */
+/* ------------ Начало Content ---------- */
+.content {
+width: auto;
+}
+
 .description {
   width: 80%;
   margin: 100px auto 0px;
 }
 
-.section__two-columns {
+.two-columns {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.two-columns-brief {
-  width: 175px;
-}
-.two-columns-brief h2 {
+.two-columns__brief {
+  max-width: 175px;
   font-size: 18px;
   font-weight: normal;
   line-height: 1.2;
   color: #2f80ed;
 }
 
-.two-columns-main-text {
+.two-columns__main-text {
   width: 80%;
   min-width: 784px;
-  font-size: 24px;
-  line-height: 34px;
-  font-weight: normal;
   margin: 0px;
 }
 
-.span-accent {
+.two-columns__paragraph {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+.two-columns__span-accent {
+  font-weight: bolder;
   margin: 30px 0px;
 }
 
@@ -124,9 +124,6 @@ a:hover {text-decoration: underline;}
 /* ------------ Начало Digits ---------- */
 
 .digits {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   margin: 100px auto 0px;
 }
 
@@ -136,7 +133,7 @@ a:hover {text-decoration: underline;}
   line-height: 1.15;
   font-weight: bolder;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 }
 
 .section__subtitle {
@@ -145,9 +142,10 @@ a:hover {text-decoration: underline;}
   line-height: 34px;
   font-weight: normal;
   text-align: center;
+  margin: auto;
 }
 
-.section__table {
+.table {
   width: 1100px;
   margin: 0 auto;
   display: flex;
@@ -155,61 +153,61 @@ a:hover {text-decoration: underline;}
   justify-content: space-between;
 }
 
-.section__table-cell {
+.table__cell {
   width: 250px;
   margin-top: 60px;
+  list-style: none;
 }
 
-.section__cell-title {
+.table__heading {
   font-size: 24px;
   line-height: 1.15;
   font-weight: bolder;
-  margin-bottom: 20px;
 }
 
-.section__cell-text {
+.table__text {
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
-  margin-bottom: 20px;
 }
 
 /* ------------ Начало Feynman ---------- */
 .feynman {
   width: 100%;
-  height: 890px;
+  min-height: 890px;
   display: flex;
   align-items: center;
   margin: 100px auto 0px;
   background-color: #f2f2f2;
   flex-direction: column;
   position: relative;
+  background-image: url(../images/feynman.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
 }
 
-.feynman-title {
-  width: 648px;
+.feynman__title {
+  max-width: 648px;
   font-size: 120px;
   line-height: 1.15;
   z-index: 1;
+  width: 60%;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.feynman-subtitle {
+.feynman__subtitle {
   font-size: 36px;
+  line-height: 34px;
+  font-weight: normal;
+  text-align: center;
   margin: 70px auto 0px;
   z-index: 1;
+  width: 60%;
 }
 
-.section__feynman-img {
-  width: 867px;
-  height: 637px;
-  background-image: url(../images/feynman.png);
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 0;
-}
-
-.section__feynman-link {
+.feynman__link {
   font-size: 36px;
   line-height: 51px;
   font-weight: normal;
@@ -229,11 +227,23 @@ a:hover {text-decoration: underline;}
   overflow: hidden;
   position: relative;
 }
-.theme-dark {
+.kaufman__title_theme_dark {
   color: #fff;
-  z-index: 2;
+  padding-top: 90px;
 }
 
+.table__heading_theme-dark {
+  color: #fff;
+}
+
+.kaufman__subtitle_theme_dark {
+  color: #fff;
+}
+
+.table__theme-dark {
+  color: #fff;
+  margin-bottom: 90px;
+}
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
@@ -241,16 +251,19 @@ a:hover {text-decoration: underline;}
   margin-right: 0;
   margin-top: 80px;
   z-index: 2;
+  list-style: none;
+}
+.table__text_theme_dark {
+  color: #fff;
 }
 
-.section__kaufman-img {
+.kaufman__image {
   width: 877px;
   height: 877px;
   background-image: url(../images/kaufman-triangle.svg);
   position: absolute;
   top: 0;
   right: -240px;
-  z-index: 1;
 }
 
 /* ------------ Начало Footer ---------- */
@@ -261,38 +274,44 @@ a:hover {text-decoration: underline;}
   margin: 0 auto;
   background-color: #1f1f1f;
   color: #fff;
+  position: relative;
 }
-.footer__content {
+.footer__column {
   width: 90%;
   display: flex;
   flex-direction: row;
   margin: 60px auto 40px;
+  justify-content: space-between;
 }
 
-.footer__logo-dark-theme {
-  background-image: url(../images/logo_place_footer.svg);
-}
-.column__content-copyright {
-  position: relative;
+.footer__column_content-copyright {
   display: flex;
   flex-basis: 711px;
+  flex-direction: column;
   justify-content: space-between;
+  margin: 0;
+  order: 1;
+}
+.logo__place-footer {
+  position: relative ;
+  top: 0px;
+  background-image: url(../images/logo_place_footer.svg);
 }
 
 .footer-author {
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 20px 0;
+  margin: 18px 0;
 }
 
-.column__content-info {
-  width: 50%;
+.footer__column_content-info {
   display: flex;
-  justify-content: flex-end;
+  flex-basis: 355px;
+  align-items: flex-end;
+  flex-direction: column;
+  margin: 0;
+  order: 2;
 }
 
 .footer__menu-section {
@@ -300,22 +319,22 @@ a:hover {text-decoration: underline;}
   flex-direction: column;
 }
 
-.column__content-sicial {
-  width: 50%;
+.footer__column_content-sicial {
   display: flex;
-  justify-content: flex-end;
+  flex-basis: 355px;
+  align-items: flex-end;
+  flex-direction: column;
+  margin: 0;
+  order: 2;
 }
-.footer-title {
+
+.footer-column__heading {
   font-size: 18px;
   line-height: 30px;
   font-weight: bolder;
 }
 
-.footer-menu {
-text-align: left;
-}
-
-.footer__menu-list {
+.footer-column__links {
   display: list-item;
   list-style: none;
   font-size: 18px;
@@ -323,11 +342,11 @@ text-align: left;
   margin: 20px 0;
 }
 
-.footer__menu-item-link {
+.footer-column__link {
   color: #fff;
 }
 
-.footer__social_icon {
+.footer__social-icon {
   margin-right: 5px;
   width: 16px;
   height: 16px;
