@@ -152,7 +152,9 @@ width: auto;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
+.table ul {
+  margin: 0;
+}
 .table__cell {
   width: 250px;
   margin-top: 60px;

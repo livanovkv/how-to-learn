@@ -13,6 +13,10 @@
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
+ ol, ul, li {
+	margin: 0;
+	padding: 0;
+}
 /* Sections
    ========================================================================== */
 
@@ -347,3 +351,4 @@ template {
 [hidden] {
   display: none;
 }
+
