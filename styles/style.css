@@ -1,3 +1,8 @@
+/* сброс отступов*/
+ol,ul,li {
+  margin: 0;
+  padding: 0;
+}
 
 .page {
   min-width: 1100px;
@@ -152,7 +157,7 @@ width: auto;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.table ul {
+ul {
   margin: 0;
 }
 .table__cell {
