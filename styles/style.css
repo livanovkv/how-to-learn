@@ -188,7 +188,7 @@ width: auto;
   background-repeat: no-repeat;
 }
 
-.feynman__title {
+.feynman-title {
   max-width: 648px;
   font-size: 120px;
   line-height: 1.15;
@@ -199,7 +199,7 @@ width: auto;
   margin: 100px 0 70px;
 }
 
-.feynman__subtitle {
+.feynman-subtitle {
   font-size: 36px;
   line-height: 34px;
   font-weight: normal;
@@ -209,7 +209,7 @@ width: auto;
   width: 60%;
 }
 
-.feynman__link {
+.feynman-link {
   font-size: 36px;
   line-height: 51px;
   font-weight: normal;
@@ -229,7 +229,7 @@ width: auto;
   overflow: hidden;
   position: relative;
 }
-.section__title_theme_dark {
+.section-title_theme_dark {
   color: #fff;
   padding-top: 90px;
 }
