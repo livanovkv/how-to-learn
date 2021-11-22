@@ -28,20 +28,23 @@
   padding-left: 64px;
 }
 
-.logo_place_header {
+.logo {
   width: 183px;
   height: 32px;
   position: absolute;
   top: 30px;
+}
+
+.logo_place_header {
   background-image: url(../images/logo_place_header.svg);
 }
 
 .header__title {
   max-width: 730px;
   margin: 0;
-  font-size: 96px;
+  font-size: 102px;
   font-weight: bolder;
-  line-height: 102px;
+  line-height: 96px;
   position: absolute;
   z-index: 2;
 }
@@ -209,7 +212,7 @@ width: auto;
   width: 60%;
 }
 
-.feynman-link {
+.feynman__link {
   font-size: 36px;
   line-height: 51px;
   font-weight: normal;
@@ -295,8 +298,6 @@ width: auto;
   order: 1;
 }
 .logo_place_footer {
-  width: 183px;
-  height: 32px;
   background-image: url(../images/logo_place_footer.svg);
   position: relative;
   top: 0px;
