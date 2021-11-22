@@ -30,13 +30,16 @@
 
 .logo {
   width: 183px;
-  height: 32px;
-  position: absolute;
-  top: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .logo_place_header {
   background-image: url(../images/logo_place_header.svg);
+  height: 32px;
+  position: absolute;
+  top: 30px;
+  left: 64px;
 }
 
 .header__title {
@@ -299,8 +302,7 @@ width: auto;
 }
 .logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
-  position: relative;
-  top: 0px;
+  height: 35px;
 }
 
 .footer-author {
