@@ -188,7 +188,7 @@ width: auto;
   background-repeat: no-repeat;
 }
 
-.feynman-title {
+.feynman__title {
   max-width: 648px;
   font-size: 120px;
   line-height: 1.15;
@@ -199,7 +199,7 @@ width: auto;
   margin: 100px 0 70px;
 }
 
-.feynman-subtitle {
+.feynman__subtitle {
   font-size: 36px;
   line-height: 34px;
   font-weight: normal;
