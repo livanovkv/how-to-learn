@@ -1,0 +1,16 @@
+@import url(../vendor/normalize.css);
+@import url(../blocks/root/root.css);
+/* ------------ Начало Header ------------ */
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/__subtitle/header__subtitle.css);
+@import url(../blocks/header/__square-pic/header__square-pic.css);
+@import url(../blocks/header/__main-illustration/header__main-illustration.css);
+/* ------------ Начало Content ---------- */
+@import url(../blocks/content/content.css);
+@import url(../blocks/content/description/description.css);
+@import url(../blocks/content/description/two-columns/two-columns.css);
+@import url(../blocks/content/description/two-columns/__brief/two-columns__brief.css);
+@import url(../blocks/content/description/two-columns/__main-text/two-columns__main-text.css);
+@import url(../blocks/content/description/two-columns/__paragraph/two-columns__paragraph.css);
+@import url(../blocks/content/description/two-columns/__span-accent/two-columns__span-accent.css);
