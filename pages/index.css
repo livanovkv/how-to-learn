@@ -32,7 +32,7 @@
 @import url(../blocks/content/video/__iframe/_margin-zero/video__iframe_margin-zero.css);
 /* ------------ Начало Oacley ---------- */
 @import url(../blocks/content/oacley/oacley.css);
-@import url(../blocks/content/oacley/_width/oacley_width.css);
+@import url(../blocks/content/oacley/_width/oacley_columns_width.css);
 /* ------------ Начало Khan ---------- */
 @import url(../blocks/content/khan/khan.css);
 @import url(../blocks/content/khan/__conteiner/khan__conteiner.css);
