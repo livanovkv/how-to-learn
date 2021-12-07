@@ -1,0 +1,8 @@
+.footer__column-heading {
+  min-width: 150px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bolder;
+  margin: 0;
+}

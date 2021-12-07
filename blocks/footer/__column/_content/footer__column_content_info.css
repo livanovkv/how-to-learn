@@ -1,0 +1,8 @@
+.footer__column_content_info {
+  display: flex;
+  flex-basis: 355px;
+  align-items: flex-end;
+  flex-direction: column;
+  margin: 0;
+  order: 2;
+}

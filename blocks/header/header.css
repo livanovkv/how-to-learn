@@ -8,4 +8,5 @@
   position: relative;
   align-items: center;
   padding-left: 64px;
+  overflow: hidden;
 }

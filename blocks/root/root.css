@@ -1,3 +1,21 @@
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes link-opacity {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -12,5 +30,10 @@
 .link {
   color: #2f80ed;
   text-decoration: none;
+  animation: none;
 }
-.link:hover {text-decoration: underline;}
+.link:hover {
+  text-decoration: underline;
+  animation: link-opacity 1s;
+	animation-timing-function: linear;
+}
