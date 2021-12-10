@@ -2,8 +2,7 @@
   max-width: 730px;
   margin: 0;
   font-size: 102px;
-  font-weight: bolder;
+  font-weight: bold;
   line-height: 96px;
-  position: absolute;
   z-index: 2;
 }
