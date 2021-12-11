@@ -2,11 +2,12 @@
   color: #2f80ed;
   text-decoration: none;
   animation: none;
+  opacity: 1;
 }
 
 .link:hover {
   text-decoration: underline;
-  color: #555;
-  transition: .5s;
+  opacity: .5;
+  transition: .3s;
 }
 

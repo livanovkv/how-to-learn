@@ -3,12 +3,3 @@
   height: 38px;
   text-align: center;
 }
-.resources__logo img{
-  opacity: .6;
-}
-
-.resources__logo img:hover{
-  opacity: 1;
-  transition: .3s;
-}
-
